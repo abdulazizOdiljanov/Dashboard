@@ -7,6 +7,8 @@
 * {
   margin: 0;
   padding: 0;
+  font-family: "lato";
+  font-weight: 400;
 }
 
 html {
@@ -22,11 +24,13 @@ img {
 
 body {
   display: flex;
+  background-color: #eee;
   flex-direction: column;
 }
 
 h1, h2, h3 {
-  line-height: 1.5;
+  margin: 0;
+  padding: 0;
 }
 
 a {
@@ -37,6 +41,20 @@ ul {
   list-style: none;
 }
 
+@font-face {
+  font-family: "Lato";
+  src: url("../fonts/Lato-Bold.woff2") format("woff2"), url("../fonts/Lato-Bold.woff") format("woff"), url("../fonts/Lato-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Lato";
+  src: url("../fonts/Lato-Regular.woff2") format("woff2"), url("../fonts/Lato-Regular.woff") format("woff"), url("../fonts/Lato-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -359,17 +377,157 @@ template {
 }
 
 .container {
-  max-width: 1300px;
+  max-width: 1440px;
   display: block;
   margin: 0 auto;
   padding: 0 20px;
 }
 
-.btn {
-  margin: 0;
-  padding: 0;
+.navbar__item {
+  margin-top: 40px;
+}
+.navbar__item a {
+  align-items: center;
+  display: flex;
+  color: #fff;
+}
+.navbar__item a img {
+  display: inline-block;
+  margin-right: 20px;
+}
+.navbar__item a .navbar__item--text {
+  font-weight: 700;
+}
+.navbar .log__out {
+  margin-top: 250px;
 }
 
-.main {
+header .header__container {
+  padding: 43px 34px 0 34px;
+  max-width: 250px;
+  min-height: 946px;
+  background: linear-gradient(175.93deg, #5F00D8 -10.23%, #B200F1 117.03%);
+}
+header .header__container hr {
+  opacity: 0.2;
+  border: 1px solid #FFFFFF;
+  margin: 35px 0;
+}
+
+.btn {
+  margin: 0;
+}
+
+main {
   flex-grow: 1;
+}
+main .main {
+  display: flex;
+  margin-top: 20px;
+}
+
+.home {
+  margin-top: 0px;
+  padding: 0;
+  font-weight: 500;
+}
+.home .home__container {
+  padding: 30px 62px 45px 64px;
+  min-height: 946px;
+  min-width: 1190px;
+  background-color: #fff;
+}
+.home__title {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+}
+.home__title .btns {
+  align-items: center;
+}
+.home__title .btn {
+  margin-top: 15px;
+  padding: 8px 17px;
+  border-radius: 5px;
+  background-color: #10CD45;
+  border: none;
+}
+.home__title .btn:nth-child(1) {
+  background-color: #EEF2F5;
+  margin-right: 10px;
+}
+.home__title .btn a {
+  color: #fff;
+}
+.home table {
+  width: 100%;
+  border: none;
+}
+.home table tr {
+  align-items: center;
+}
+.home table tr:nth-child(even) {
+  background-color: #EEF2F5;
+}
+.home table tr th {
+  -moz-text-align-last: left;
+       text-align-last: left;
+  font-weight: 500;
+  font-size: 14px;
+  align-items: center;
+  padding-left: 10px;
+}
+.home table tr th:nth-child(1) {
+  display: flex;
+}
+.home table tr th:nth-child(1) img {
+  margin-right: 10px;
+}
+.home table tr th img {
+  margin: 15px 0;
+}
+.home table tr th:nth-child(1) {
+  color: #414141;
+}
+.home table tr th:nth-child(2) {
+  color: #414141;
+}
+.home table tr th:nth-child(3) {
+  color: #00CA39;
+}
+.home table tr th:nth-child(4) {
+  color: #E44067;
+}
+.home table tr:nth-child(1) th {
+  color: #878787;
+  padding: 10px;
+  font-size: 17px;
+}
+.home .pages {
+  margin-top: 40px;
+  display: flex;
+  justify-content: center;
+  font-size: 14px;
+  align-items: center;
+}
+.home .pages .btn {
+  font-weight: 800;
+  padding: 6px 10px;
+  background-color: #EEF2F5;
+  border: none;
+  border-radius: 5px;
+}
+.home .pages p {
+  padding: 0 10px;
+  font-size: 18px;
+  font-weight: 800;
+}
+.home .pages div {
+  margin: 0 10px;
+  font-size: 18px;
+  font-weight: 800;
+  padding: 5px 9px;
+  color: #BDC1CA;
+  border: 2px solid #BDC1CA;
+  border-radius: 50%;
 }/*# sourceMappingURL=main.css.map */

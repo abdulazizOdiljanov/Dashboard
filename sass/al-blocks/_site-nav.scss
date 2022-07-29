@@ -1,0 +1,25 @@
+.navbar {
+
+   &__item {
+      margin-top: 40px;
+      
+      a {
+         align-items: center;
+         display: flex;
+         color: $white;
+
+         img {
+            display: inline-block;
+            margin-right: 20px;
+         }
+
+         .navbar__item--text {
+            font-weight: 700;
+         }
+      }
+   }
+
+   .log__out {
+      margin-top: 250px;
+   }
+}

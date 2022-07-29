@@ -7,6 +7,8 @@
 * {
     margin: 0;
     padding: 0;
+    font-family: 'lato';
+    font-weight: 400;
 }
 
 html {
@@ -23,11 +25,13 @@ img {
 
 body {
     display: flex;
+    background-color: #eee;
     flex-direction: column;
 }
 
 h1 , h2 , h3 {
-    line-height: 1.5;
+    margin: 0;
+    padding: 0;
 }
 
 a {
